@@ -4,6 +4,7 @@ import { Text } from '../formatting/formatting';
 import { EmojiIcon, UrlIcon } from '../webhooks/formats';
 
 export interface WebhookMessage {
+  format: "text" | "html";
   text: Text;
   username?: string;
   icon?: EmojiIcon | UrlIcon;
@@ -18,7 +19,7 @@ export abstract class PluginBase {
   public constructor(
     protected logger: Logger,
     protected bridge: MatrixBridge,
-  ) {}
+  ) { }
 
   abstract init(): Promise<void>;
 

@@ -1,5 +1,9 @@
 `matrix-webhook-gateway` lets you create and manage webhooks for Matrix channels. The application is configured with a simple and clearly documented configuration file, and webhooks can be added and removed directly in Matrix. A powerful plugin system is available (including several examples), allowing you to easily add handlers for various types of webhooks.
 
+### About this fork
+
+I need some custom format for my webhooks and found the repo from geluk, which support plugins. Please be careful with this code im not experienced in TS. 
+
 # Installation
 
 ## Docker
