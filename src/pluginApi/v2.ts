@@ -4,7 +4,7 @@ import { Text } from '../formatting/formatting';
 import { EmojiIcon, UrlIcon } from '../webhooks/formats';
 
 export interface WebhookMessage {
-  format: "text" | "html";
+  format?: "text" | "html";
   text: Text;
   username?: string;
   icon?: EmojiIcon | UrlIcon;
